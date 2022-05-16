@@ -15,6 +15,7 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="{{ asset('assets/dist/css/adminlte.min.css')}}">
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css" />
   {{-- <link rel="stylesheet" href="{{ asset('//cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css')}}">
 
    --}}
@@ -67,6 +68,8 @@
 <script src="{{asset('assets/dist/js/demo.js')}}"></script>
 
 <script src="{{asset('assets/js/admin/exam.js')}}"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.min.js"></script>
 
 {{-- </script> --}}
 </body>

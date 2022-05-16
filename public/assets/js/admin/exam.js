@@ -6,6 +6,16 @@ $(function () {
         }
     });
 
+
+    $('#myselect').select2({
+        width: '100%',
+        placeholder: "Select an Option",
+        allowClear: true
+      });
+    // $(document).ready(function() {
+    //     var multi = new Multiselect("#countries");
+    // });
+
     $("#import").click(function(){
         $('#myModal').modal('show');
     });

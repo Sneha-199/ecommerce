@@ -97,23 +97,22 @@
                     <th>order id</th>
                     <th>products</th>
                      <th>Net Amount</th>
-                     <th>total amout</th>
                 </tr>
             </thead>
             <tbody>
 
 
-@foreach ($products as $product)
+        
+{{-- @foreach ($products as $product) --}}
 <tr>
 
     <td>{{ $order_id }}</td>
-    <td>{{$product['productname']}}</td>
-    <td>{{ $product['price']}}</td>
-    <td>{{ $totalprice}}</td>
+    <td>{{$name}}</td>
+    <td>{{ $price}}</td>
 
 </tr>
 
-@endforeach
+{{-- @endforeach --}}
 
 
                 {{-- <tr>

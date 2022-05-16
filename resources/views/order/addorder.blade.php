@@ -87,18 +87,24 @@
                             </span>
                             @enderror
                         </div>
-
-
                         <div class="form-group col-md-6">
-                            <label for="gender">product</label>
-                            <select class="form-control @error('product') is-invalid @enderror" name="product" >
+                            <label for="product">product</label>
+                            {{-- <select class="form-control" multiple data-live-search="true" name="product[]" > --}}
                                 {{-- form-control @error('product') is-invalid @enderror --}}
+                                {{-- <option value="">Select product</option>
+                                @foreach(App\Models\Product::all() as $key=> $product)
+                                <option value=" {{$product->id}}">{{$product->productname}}</option>
+                                @endforeach
+
+                            </select> --}}
+                            <select id='myselect' name="product[]" multiple>
                                 <option value="">Select product</option>
                                 @foreach(App\Models\Product::all() as $key=> $product)
                                 <option value=" {{$product->id}}">{{$product->productname}}</option>
                                 @endforeach
 
                             </select>
+
                             @error('product')
                             <span class="text-danger">
                                 <strong>{{ $message }}</strong>

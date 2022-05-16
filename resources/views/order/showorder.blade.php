@@ -109,7 +109,7 @@
                             <tr>
                                 <td>{{ $key+1 }}</td>
                                 {{-- <td><img src="{{ Storage::url('public/images/'.$product->photo) }}" alt="img" style="height: 50px;width:auto;"></td> --}}
-                                <td>{{ $order->id }}</td>
+                                <td>{{ $order->order_id }}</td>
                                 <td>{{ $order->customername }}</td>
                                 <td>{{ $order->phonenumber}}</td>
                                 {{-- <td>{{ $order->price}}</td> --}}
@@ -123,7 +123,7 @@
                                     <form action="{{ route('deleteOrder',[ $order->id ]) }}" id="delete-form{{ $order->id }}" method="post">
                                         {{method_field('DELETE')}}
                                         @csrf</form>&nbsp
-                                    <a title="invoice" href="{{url('generate-invoice-pdf')}}/{{ $order->id}}" class="btn btn-primary">Invoice</a>
+                                    <a title="invoice" href="{{url('generate-invoice-pdf')}}/{{ $order->order_id}}" class="btn btn-primary">Invoice</a>
                                 </td>
                             </tr>
 

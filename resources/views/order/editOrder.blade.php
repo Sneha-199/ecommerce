@@ -96,11 +96,13 @@
 
                         <div class="form-group col-md-6">
                             <label for="gender">Product</label>
-                            <select class="form-control @error('product') is-invalid @enderror" name="product">
+                            <select id='myselect' name="product[]" multiple>
                                 <option value="">Select product</option>
                                 @foreach(App\Models\Product::all() as $key=> $product)
-                                <option value=" {{$product->id}}" {{ $product->id===$order->products_id?'selected':'' }}>{{$product->productname}}</option>
+                                <option value=" {{$product->id}}">{{$product->productname}}</option>
                                 @endforeach
+
+                            </select>
 
                             </select>
                             @error('product')

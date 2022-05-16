@@ -1,0 +1,6 @@
+ .modal-body {
+    max-height: calc(100vh - 148px);
+    overflow-y: scroll;   /*give auto it will take based in content */
+    overflow-y: auto;
+    overflow-x:auto;
+  }
